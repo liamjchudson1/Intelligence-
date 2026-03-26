@@ -1,0 +1,65 @@
+{
+  "name": "sports_betting",
+  "display_name": "Sports Betting",
+  "description": "Monitor sports betting communities for emerging trends, sentiment shifts, and cultural signals.",
+
+  "keywords": [
+    "parlay", "props", "betting", "odds", "spread", "moneyline", "over under",
+    "sharp", "square", "degen", "lock", "fade", "tail", "handicap", "vig",
+    "juice", "bankroll", "unit", "roi", "ev", "expected value", "arbitrage",
+    "value bet", "line movement", "steam move", "reverse line movement",
+    "player prop", "same game parlay", "sgp", "live betting", "in-play",
+    "cash out", "boost", "promo", "bonus", "free bet", "risk-free",
+    "fanduel", "draftkings", "betmgm", "caesars", "bet365", "bovada",
+    "prizepicks", "underdog fantasy", "sleeper", "fliff",
+    "nfl", "nba", "mlb", "nhl", "ufc", "mma", "soccer", "premier league",
+    "college football", "march madness", "super bowl", "world cup",
+    "tout", "tipster", "capper", "model", "algorithm", "data-driven",
+    "responsible gambling", "problem gambling", "regulation"
+  ],
+
+  "subreddits": [
+    "sportsbook",
+    "sportsbetting",
+    "PrizePicks",
+    "UnderdogFantasy",
+    "fantasyfootball",
+    "NFLBetting",
+    "NBABetting",
+    "MLBBetting",
+    "MMABetting",
+    "SoccerBetting"
+  ],
+
+  "twitter_queries": [
+    "sports betting -is:retweet lang:en",
+    "parlay picks -is:retweet lang:en",
+    "sharp money line movement -is:retweet lang:en",
+    "#sportsbetting -is:retweet lang:en",
+    "#GamblingTwitter -is:retweet lang:en",
+    "prizepicks underdog fantasy -is:retweet lang:en"
+  ],
+
+  "discord_channel_ids": [],
+
+  "forums": [
+    {
+      "name": "Covers Forum",
+      "url": "https://www.covers.com/forum",
+      "post_selector": ".forum-post, .thread-item",
+      "title_selector": ".thread-title a, h3 a",
+      "content_selector": ".post-content, .message-body",
+      "author_selector": ".username, .author"
+    }
+  ],
+
+  "monitors": ["reddit", "twitter", "forum"],
+
+  "delivery_channels": ["slack", "beehiiv"],
+
+  "schedule": {
+    "monitor_interval_hours": 6,
+    "report_day": "monday",
+    "report_hour": 8
+  }
+}
